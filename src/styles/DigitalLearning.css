@@ -1,0 +1,53 @@
+@import './variable.css';
+
+.digital-learning {
+  background: var(--white);
+  padding: 60px;
+}
+
+.dl-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.dl-header h1 {
+  font-family: 'Playfair Display', serif;
+  color: var(--navy);
+}
+
+.dl-header p {
+  font-family: 'Inter', sans-serif;
+  max-width: 700px;
+  margin: 0 auto;
+  color: var(--navy);
+}
+
+.dl-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 24px;
+}
+
+.dl-card {
+  background: var(--cream);
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  transition: transform .25s, box-shadow .25s;
+}
+
+.dl-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(0,0,0,.1);
+}
+
+.dl-card h3 {
+  font-family: 'Playfair Display', serif;
+  color: var(--green);
+  margin-bottom: 12px;
+}
+
+.dl-card p {
+  font-family: 'Inter', sans-serif;
+  color: var(--navy);
+}

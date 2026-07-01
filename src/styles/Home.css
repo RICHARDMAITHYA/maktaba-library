@@ -1,0 +1,73 @@
+@import './variable.css';
+
+.home {
+  background: var(--cream);
+  padding: 60px;
+}
+
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+  background: var(--navy);
+  color: var(--white);
+}
+
+.hero-headline {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(36px, 5vw, 64px);
+  margin-bottom: 20px;
+  color: var(--gold);
+}
+
+.hero-sub {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  max-width: 600px;
+  margin: 0 auto 30px;
+  color: rgba(255,255,255,.8);
+}
+
+.hero-cta {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.btn-primary {
+  background: var(--gold);
+  color: var(--navy);
+  padding: 12px 24px;
+  border-radius: 6px;
+  text-transform: uppercase;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 600;
+}
+
+.btn-secondary {
+  background: transparent;
+  border: 2px solid var(--gold);
+  color: var(--gold);
+  padding: 12px 24px;
+  border-radius: 6px;
+  text-transform: uppercase;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 600;
+}
+
+.value-prop {
+  text-align: center;
+  margin-top: 60px;
+}
+
+.value-prop h2 {
+  font-family: 'Playfair Display', serif;
+  color: var(--green);
+  margin-bottom: 20px;
+}
+
+.value-prop p {
+  font-family: 'Inter', sans-serif;
+  color: var(--navy);
+  max-width: 600px;
+  margin: 0 auto;
+}

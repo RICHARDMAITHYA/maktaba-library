@@ -1,0 +1,290 @@
+@import './variable.css';
+
+.footer {
+  background: var(--navy);
+  color: var(--white);
+  border-top: 6px solid var(--gold);
+  margin-top: 80px;
+}
+
+/* Main Footer Content Grid */
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 40px;
+  padding: 60px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* Footer Column Styles */
+.footer-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-column h4 {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--gold);
+  margin-bottom: 16px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 10px;
+}
+
+.footer-column a {
+  color: var(--white);
+  text-decoration: none;
+  font-size: 13px;
+  line-height: 1.6;
+  transition: color 0.3s ease;
+}
+
+.footer-column a:hover {
+  color: var(--gold);
+}
+
+/* Logo & Company Info Section */
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.logo-tile {
+  background: linear-gradient(135deg, var(--gold), var(--red));
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 900;
+  font-size: 20px;
+  color: var(--navy);
+  border-radius: 4px;
+  font-family: 'Playfair Display', serif;
+}
+
+.footer-logo h3 {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
+  letter-spacing: 1px;
+}
+
+.company-tagline {
+  font-size: 12px;
+  color: var(--gold);
+  font-style: italic;
+  margin: 8px 0 12px 0;
+  font-weight: 500;
+}
+
+.company-desc {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+/* Social Links */
+.social-links {
+  display: flex;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.social-links a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  background: rgba(242, 184, 37, 0.15);
+  border-radius: 50%;
+  font-size: 18px;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(242, 184, 37, 0.3);
+}
+
+.social-links a:hover {
+  background: var(--gold);
+  color: var(--navy);
+  transform: translateY(-3px);
+}
+
+/* Contact Info */
+.contact-info {
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+.contact-info p {
+  margin: 10px 0;
+}
+
+.contact-info strong {
+  color: var(--gold);
+  font-weight: 600;
+}
+
+.contact-info a {
+  color: var(--gold);
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+/* Newsletter Signup */
+.newsletter-signup {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(242, 184, 37, 0.2);
+}
+
+.newsletter-label {
+  font-size: 12px;
+  color: var(--gold);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 12px;
+}
+
+.newsletter-signup form {
+  display: flex;
+  gap: 8px;
+  flex-direction: column;
+}
+
+.newsletter-signup input {
+  padding: 10px 12px;
+  border: 1px solid rgba(242, 184, 37, 0.3);
+  border-radius: 4px;
+  background: rgba(242, 184, 37, 0.05);
+  color: var(--white);
+  font-size: 12px;
+  font-family: 'Inter', sans-serif;
+  transition: all 0.3s ease;
+}
+
+.newsletter-signup input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.newsletter-signup input:focus {
+  outline: none;
+  border-color: var(--gold);
+  background: rgba(242, 184, 37, 0.1);
+  box-shadow: 0 0 8px rgba(242, 184, 37, 0.2);
+}
+
+.newsletter-signup button {
+  padding: 10px 12px;
+  background: var(--gold);
+  color: var(--navy);
+  border: none;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: 'Barlow Condensed', sans-serif;
+}
+
+.newsletter-signup button:hover {
+  background: var(--white);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(242, 184, 37, 0.3);
+}
+
+/* Footer Divider */
+.footer-divider {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(242, 184, 37, 0.3), transparent);
+  margin: 0 60px;
+}
+
+/* Bottom Footer */
+.footer-bottom {
+  padding: 24px 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+  flex-wrap: wrap;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.copyright {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.7);
+  margin: 0;
+  flex: 1;
+  min-width: 250px;
+}
+
+.footer-links {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  font-size: 12px;
+}
+
+.footer-links a {
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: var(--gold);
+}
+
+.footer-links .divider {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer-content {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    padding: 40px 24px;
+  }
+
+  .footer-divider {
+    margin: 0 24px;
+  }
+
+  .footer-bottom {
+    padding: 20px 24px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-links {
+    flex-wrap: wrap;
+  }
+
+  .copyright {
+    font-size: 11px;
+  }
+}

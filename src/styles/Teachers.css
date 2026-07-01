@@ -1,0 +1,58 @@
+@import './variable.css';
+
+.teachers {
+  background: var(--parch);
+  padding: 60px;
+}
+
+.teachers-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.teachers-header h1 {
+  font-family: 'Playfair Display', serif;
+  color: var(--navy);
+}
+
+.teachers-header p {
+  font-family: 'Inter', sans-serif;
+  max-width: 700px;
+  margin: 0 auto;
+  color: var(--navy);
+}
+
+.teacher-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+.teacher-card {
+  background: var(--white);
+  border-radius: 12px;
+  padding: 24px;
+  border: 1px solid rgba(0,0,0,.06);
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  transition: transform .25s, box-shadow .25s;
+}
+
+.teacher-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 32px rgba(26,74,46,.1);
+}
+
+.teacher-num {
+  width: 48px;
+  height: 48px;
+  background: var(--green);
+  color: var(--gold);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Playfair Display', serif;
+  font-size: 20px;
+}

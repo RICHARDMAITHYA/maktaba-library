@@ -1,0 +1,151 @@
+@import './variable.css';
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--navy);
+  padding: 1rem 2rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-img {
+  display: block;
+  max-height: 42px;
+  width: auto;
+}
+
+.logo-text {
+  font-family: 'Playfair Display', serif;
+  font-size: 18px;
+  color: var(--gold);
+}
+
+.navigation ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.navigation li {
+  position: relative;
+}
+
+.navigation a {
+  font-family: 'Barlow Condensed', sans-serif;
+  color: var(--gold);
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: .05em;
+  display: block;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+}
+
+.navigation a:hover {
+  color: var(--red);
+  background: rgba(255, 255, 255, 0.05);
+}
+.dropdown {
+  position: relative;
+  cursor: pointer;
+}
+
+.dropdown > span {
+  font-family: 'Barlow Condensed', sans-serif;
+  color: var(--gold);
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: .05em;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  user-select: none;
+}
+
+.dropdown > span:hover {
+  color: var(--red);
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: calc(100% + 8px);
+  left: -10px;
+  background: var(--navy);
+  border: 2px solid var(--gold);
+  border-radius: 8px;
+  list-style: none;
+  padding: 12px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  min-width: 220px;
+  z-index: 1000;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  animation: slideDown 0.15s ease;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.dropdown-menu li {
+  margin: 0;
+}
+
+.dropdown-menu li a {
+  color: var(--gold);
+  text-decoration: none;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 600;
+  padding: 12px 20px;
+  display: block;
+  transition: all 0.15s ease;
+  border-left: 3px solid transparent;
+}
+
+.dropdown-menu li a:hover {
+  color: var(--red);
+  background: rgba(242, 184, 37, 0.1);
+  border-left-color: var(--red);
+  padding-left: 24px;
+}
+
+.dropdown > span.active {
+  background: rgba(242, 184, 37, 0.15);
+  color: var(--red);
+  border: 1px solid var(--gold);
+}
+
+.arrow {
+  font-size: 11px;
+  transition: transform 0.2s ease;
+  display: inline-block;
+}
+
+.dropdown > span.active .arrow {
+  transform: rotate(180deg);
+}
+
+.dropdown > span:hover .arrow {
+  transform: scale(1.2);
+}
+

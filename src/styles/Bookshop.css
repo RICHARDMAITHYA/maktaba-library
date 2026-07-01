@@ -1,0 +1,73 @@
+@import './variable.css';
+
+.bookshop {
+  background: var(--white);
+  padding: 60px;
+}
+
+.bookshop-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.bookshop-header h1 {
+  font-family: 'Playfair Display', serif;
+  color: var(--navy);
+}
+
+.bookshop-header p {
+  font-family: 'Inter', sans-serif;
+  max-width: 700px;
+  margin: 0 auto;
+  color: var(--navy);
+}
+
+.books-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 24px;
+}
+
+.book-card {
+  background: var(--cream);
+  border: 1px solid rgba(0,0,0,.08);
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  transition: transform .25s, box-shadow .25s;
+}
+
+.book-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(0,0,0,.1);
+}
+
+.book-cover {
+  width: 80px;
+  height: 100px;
+  margin: 0 auto 16px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Playfair Display', serif;
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--white);
+}
+
+.book-cover.math { background: var(--green); }
+.book-cover.science { background: var(--red); }
+.book-cover.english { background: var(--gold); }
+
+.book-card h3 {
+  font-family: 'Playfair Display', serif;
+  color: var(--navy);
+  margin-bottom: 8px;
+}
+
+.book-card p {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  color: #555;
+}

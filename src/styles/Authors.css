@@ -1,0 +1,65 @@
+@import './variable.css';
+
+.authors {
+  background: var(--white);
+  padding: 60px;
+}
+
+.authors-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.authors-header h1 {
+  font-family: 'Playfair Display', serif;
+  color: var(--navy);
+}
+
+.authors-header p {
+  font-family: 'Inter', sans-serif;
+  max-width: 700px;
+  margin: 0 auto;
+  color: var(--navy);
+}
+
+.authors-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+}
+
+.author-card {
+  background: var(--cream);
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  transition: transform .25s, box-shadow .25s;
+}
+
+.author-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(0,0,0,.1);
+}
+
+.author-card h3 {
+  font-family: 'Playfair Display', serif;
+  color: var(--green);
+  margin-bottom: 12px;
+}
+
+.author-card p {
+  font-family: 'Inter', sans-serif;
+  color: var(--navy);
+  margin-bottom: 12px;
+}
+
+.author-card a {
+  font-family: 'Barlow Condensed', sans-serif;
+  color: var(--red);
+  text-decoration: none;
+  font-weight: 600;
+}
+.author-card a:hover {
+  color: var(--gold);
+}
+

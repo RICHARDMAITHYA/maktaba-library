@@ -1,0 +1,54 @@
+@import './variable.css';
+
+.leadership {
+  background: var(--cream);
+  padding: 60px;
+}
+
+.leadership-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.leadership-header h1 {
+  font-family: 'Playfair Display', serif;
+  color: var(--navy);
+}
+
+.leadership-header p {
+  font-family: 'Inter', sans-serif;
+  max-width: 700px;
+  margin: 0 auto;
+  color: var(--navy);
+}
+
+.leaders-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 24px;
+}
+
+.leader-card {
+  background: var(--white);
+  border: 1px solid rgba(0,0,0,.08);
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  transition: transform .25s, box-shadow .25s;
+}
+
+.leader-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(0,0,0,.1);
+}
+
+.leader-card h3 {
+  font-family: 'Playfair Display', serif;
+  color: var(--green);
+  margin-bottom: 8px;
+}
+
+.leader-card p {
+  font-family: 'Inter', sans-serif;
+  color: var(--navy);
+}

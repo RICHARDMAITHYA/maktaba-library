@@ -1,0 +1,67 @@
+@import './variable.css';
+
+.resources {
+  background: var(--cream);
+  padding: 60px;
+}
+
+.resources-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.resources-header h1 {
+  font-family: 'Playfair Display', serif;
+  color: var(--navy);
+}
+
+.resources-header p {
+  font-family: 'Inter', sans-serif;
+  max-width: 700px;
+  margin: 0 auto;
+  color: var(--navy);
+}
+
+.resources-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 24px;
+}
+
+.resource-card {
+  background: var(--white);
+  border-radius: 12px;
+  padding: 24px;
+  border: 1px solid rgba(0,0,0,.08);
+  text-align: center;
+  transition: transform .25s, box-shadow .25s;
+}
+
+.resource-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(0,0,0,.1);
+}
+
+.resource-card h3 {
+  font-family: 'Playfair Display', serif;
+  color: var(--green);
+  margin-bottom: 8px;
+}
+
+.resource-card p {
+  font-family: 'Inter', sans-serif;
+  color: var(--navy);
+  margin-bottom: 12px;
+}
+
+.resource-card a {
+  font-family: 'Barlow Condensed', sans-serif;
+  color: var(--gold);
+  text-transform: uppercase;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.resource-card a:hover {
+  color: var(--red);
+}

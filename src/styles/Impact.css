@@ -1,0 +1,55 @@
+@import './variable.css';
+
+.impact {
+  background: var(--white);
+  padding: 60px;
+}
+
+.impact-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.impact-header h1 {
+  font-family: 'Playfair Display', serif;
+  color: var(--navy);
+}
+
+.impact-header p {
+  font-family: 'Inter', sans-serif;
+  max-width: 700px;
+  margin: 0 auto;
+  color: var(--navy);
+}
+
+.impact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 24px;
+}
+
+.impact-card {
+  background: var(--cream);
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  transition: transform .25s, box-shadow .25s;
+}
+
+.impact-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(0,0,0,.1);
+}
+
+.impact-card h3 {
+  font-family: 'Playfair Display', serif;
+  color: var(--green);
+  margin-bottom: 12px;
+}
+
+.counter {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--red);
+}

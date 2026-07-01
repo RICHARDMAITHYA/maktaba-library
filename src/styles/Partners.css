@@ -1,0 +1,59 @@
+@import './variable.css';
+
+.partners {
+  background: var(--white);
+  padding: 60px;
+}
+
+.partners-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.partners-header h1 {
+  font-family: 'Playfair Display', serif;
+  color: var(--navy);
+}
+
+.partners-header p {
+  font-family: 'Inter', sans-serif;
+  max-width: 700px;
+  margin: 0 auto;
+  color: var(--navy);
+}
+
+.partners-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 24px;
+}
+
+.partner-card {
+  background: var(--cream);
+  border-radius: 12px;
+  padding: 24px;
+  text-align: center;
+  border: 1px solid rgba(0,0,0,.08);
+  transition: transform .25s, box-shadow .25s;
+}
+
+.partner-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(0,0,0,.1);
+}
+
+.partner-logo {
+  font-size: 40px;
+  margin-bottom: 12px;
+}
+
+.partner-card h3 {
+  font-family: 'Playfair Display', serif;
+  color: var(--green);
+  margin-bottom: 8px;
+}
+
+.partner-card p {
+  font-family: 'Inter', sans-serif;
+  color: var(--navy);
+}

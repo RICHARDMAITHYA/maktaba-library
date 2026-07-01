@@ -1,0 +1,49 @@
+@import './variable.css';
+
+.about {
+  background: var(--cream);
+  padding: 60px;
+}
+
+.about-hero {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.about-hero h1 {
+  font-family: 'Playfair Display', serif;
+  color: var(--navy);
+  margin-bottom: 20px;
+}
+
+.about-hero p {
+  font-family: 'Inter', sans-serif;
+  max-width: 700px;
+  margin: 0 auto;
+  color: var(--navy);
+}
+
+.mission-vision h2,
+.values h2 {
+  font-family: 'Playfair Display', serif;
+  color: var(--green);
+  margin-top: 40px;
+}
+
+.values ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.values li {
+  background: var(--gold);
+  color: var(--navy);
+  padding: 10px 16px;
+  border-radius: 6px;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+}
