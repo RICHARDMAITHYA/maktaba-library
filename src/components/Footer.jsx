@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import FlagStripe from "./FlagStripe";
+import boostLogo from "../assets/boost.PNG";
 import "../styles/Footer.css";
 
 function Footer() {
+
   const [email, setEmail] = useState("");
 
   const handleNewsletterSubmit = (e) => {
@@ -15,14 +17,28 @@ function Footer() {
   return (
     <>
       <footer className="footer">
+        <button
+          className="scroll-to-top"
+          type="button"
+          aria-label="Scroll to top"
+          onClick={() => {
+            const el = document.scrollingElement || document.documentElement;
+            (el || window).scrollTo({ top: 0, behavior: "smooth" });
+          }}
+        >
+          ↑
+        </button>
+
         {/* Main Footer Content */}
         <div className="footer-content">
+
           {/* Column 1: Company Info */}
           <div className="footer-column">
             <div className="footer-logo">
-              <div className="logo-tile">M</div>
-              <h3>MAKTABA MART</h3>
+              <img src={boostLogo} alt="Logo" className="footer-logo-img" />
+              <span className="footer-logo-text">MAKTABA MART</span>
             </div>
+
             <p className="company-tagline">Dedicated to Excellence in Learning</p>
             <p className="company-desc">Africa's emerging knowledge empowerment institution delivering quality educational solutions.</p>
             <div className="social-links">
@@ -37,11 +53,11 @@ function Footer() {
           <div className="footer-column">
             <h4>Products</h4>
             <ul>
-              <li><Link to="/bookshop">Revision Books</Link></li>
-              <li><Link to="/ict-learning">ICT Learning</Link></li>
-              <li><Link to="/teachers">Teacher Resources</Link></li>
-              <li><Link to="/assessments">Assessments</Link></li>
-              <li><Link to="/school-management">School Management</Link></li>
+              <li><Link to="/bookshop" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>Revision Books</Link></li>
+              <li><Link to="/ict-learning" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>ICT Learning</Link></li>
+              <li><Link to="/teachers" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>Teacher Resources</Link></li>
+              <li><Link to="/assessments" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>Assessments</Link></li>
+              <li><Link to="/school-management" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>School Management</Link></li>
             </ul>
           </div>
 
@@ -49,11 +65,11 @@ function Footer() {
           <div className="footer-column">
             <h4>Resources</h4>
             <ul>
-              <li><Link to="/about">About Us</Link></li>
-              <li><Link to="/academic-publishing">Academic Publishing</Link></li>
-              <li><Link to="/knowledge-centre">Knowledge Centre</Link></li>
-              <li><Link to="/impact">Our Impact</Link></li>
-              <li><Link to="/news">News & Updates</Link></li>
+              <li><Link to="/about" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>About Us</Link></li>
+              <li><Link to="/academic-publishing" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>Academic Publishing</Link></li>
+              <li><Link to="/knowledge-centre" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>Knowledge Centre</Link></li>
+              <li><Link to="/impact" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>Our Impact</Link></li>
+              <li><Link to="/news" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>News & Updates</Link></li>
             </ul>
           </div>
 

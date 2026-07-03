@@ -61,7 +61,8 @@
 
 .value-prop h2 {
   font-family: 'Playfair Display', serif;
-  color: var(--green);
+  color: var(--red);
+
   margin-bottom: 20px;
 }
 

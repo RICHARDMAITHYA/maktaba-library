@@ -1,12 +1,16 @@
 @import './variable.css';
 
 .navigation {
+  position: sticky;
+  top: 0;
+  z-index: 10000;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: var(--navy);
+  background: #000000;
   padding: 1rem 2rem;
 }
+
 
 .logo {
   display: flex;

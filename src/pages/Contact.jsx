@@ -4,35 +4,54 @@ import "../styles/Contact.css";
 function Contact() {
   return (
     <section className="contact">
-      <div className="contact-header">
-        <h1>Get in Touch</h1>
-        <p>
-          Order our Grade 10 revision books, ICT learning bundles, teacher resource kits, and school management solutions today. Bulk school orders, county supply agreements, and institutional pricing are available. Contact us for a customised quote for your school or cluster.
-        </p>
+      <div className="contact-hero">
+        <div className="contact-hero-inner">
+          <h1>Contact us</h1>
+          <p>Get fast help via email, WhatsApp, or our Nairobi office.</p>
+          <div className="contact-hero-links">
+            <a href="mailto:info@makhtabamart.co.ke" className="hero-pill">Email</a>
+            <a
+              href="https://wa.me/254714464589?text=Hello%20Maktaba%20Mart%2C%20I%20need%20help%20with%20school%20resources.%20"
+              target="_blank"
+              rel="noreferrer"
+              className="hero-pill hero-pill--green"
+            >
+              WhatsApp
+            </a>
+            <a
+              href="https://www.google.com/maps/dir/?api=1&destination=Luther+Plaza+Nyerere+Road+Nairobi"
+              target="_blank"
+              rel="noreferrer"
+              className="hero-pill hero-pill--navy"
+            >
+              Directions
+            </a>
+          </div>
+        </div>
       </div>
 
       <div className="contact-steps">
-        <h2>What Happens Next?</h2>
+        <h2>How can we help?</h2>
         <div className="step-grid">
           <div className="step-card">
             <div className="step-number">1</div>
             <div className="step-content">
-              <h3>Consultation</h3>
-              <p>We discuss your school needs, curriculum goals, and learning challenges so we can recommend the right resources.</p>
+              <h3>Email support</h3>
+              <p>Get support for orders, ICT, and teacher resources.</p>
             </div>
           </div>
           <div className="step-card">
             <div className="step-number">2</div>
             <div className="step-content">
-              <h3>Proposal</h3>
-              <p>We share a clear plan with product recommendations, implementation timing, and a competitive quote for your institution.</p>
+              <h3>WhatsApp quick answers</h3>
+              <p>Ask about pricing, availability, and packages.</p>
             </div>
           </div>
           <div className="step-card">
             <div className="step-number">3</div>
             <div className="step-content">
-              <h3>Kickoff</h3>
-              <p>Once approved, we begin supplying your school packages and supporting your adoption immediately.</p>
+              <h3>Visit our office</h3>
+              <p>Meet us at Luther Plaza, Nairobi.</p>
             </div>
           </div>
         </div>
@@ -43,8 +62,8 @@ function Contact() {
           <div className="contact-card">
             <div className="card-icon">📧</div>
             <div className="card-body">
-              <h4>Email Us</h4>
-              <p>Send your enquiry about school orders, ICT solutions, or teachers’ resources and we’ll respond with a tailored recommendation.</p>
+              <h4>Email</h4>
+              <p>Email us your enquiry.</p>
               <a href="mailto:info@makhtabamart.co.ke" className="card-button">Send Email</a>
             </div>
           </div>
@@ -53,24 +72,38 @@ function Contact() {
             <div className="card-icon">💬</div>
             <div className="card-body">
               <h4>WhatsApp</h4>
-              <p>Message us directly on WhatsApp for fast support, pricing details, or custom package quotes.</p>
-              <a href="https://wa.me/254714464589?text=Hello%20Maktaba%20Mart,%20I%20would%20like%20to%20know%20more%20about%20your%20school%20resource%20packages." target="_blank" rel="noreferrer" className="card-button">Chat Now</a>
+              <p>Quick answers for schools and educators.</p>
+              <a
+                href="https://wa.me/254714464589?text=Hello%20Maktaba%20Mart%2C%20I%20would%20like%20to%20know%20more%20about%20your%20school%20resource%20packages."
+                target="_blank"
+                rel="noreferrer"
+                className="card-button"
+              >
+                Chat Now
+              </a>
             </div>
           </div>
 
           <div className="contact-card contact-card--accent">
             <div className="card-icon">📍</div>
             <div className="card-body">
-              <h4>Visit Us</h4>
-              <p>Drop in at our Nairobi office for a consultation on curriculum materials, assessment support, and digital learning plans.</p>
-              <a href="https://www.google.com/maps/dir/?api=1&destination=Luther+Plaza+Nyerere+Road+Nairobi" target="_blank" rel="noreferrer" className="card-button">Get Directions</a>
+              <h4>Office</h4>
+              <p>Plan your visit in Nairobi.</p>
+              <a
+                href="https://www.google.com/maps/dir/?api=1&destination=Luther+Plaza+Nyerere+Road+Nairobi"
+                target="_blank"
+                rel="noreferrer"
+                className="card-button"
+              >
+                Get Directions
+              </a>
             </div>
           </div>
         </div>
 
         <div className="contact-map">
           <div className="map-header">
-            <h3>Find Us</h3>
+            <h3>Find us</h3>
             <p>Luther Plaza, Ground Floor Suite 4, Nyerere Road, Nairobi</p>
           </div>
           <div className="map-frame">

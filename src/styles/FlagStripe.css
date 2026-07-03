@@ -12,5 +12,6 @@
 
 .stripe.black { background: var(--black); }
 .stripe.red   { background: var(--red); }
-.stripe.green { background: var(--green); }
-.stripe.gold  { background: var(--gold); }
+.stripe.green { background: var(--navy); }
+.stripe.gold  { background: var(--red); }
+
