@@ -1,9 +1,11 @@
 import React from "react";
+import SocialLinks from "../components/SocialLinks";
 import "../styles/Contact.css";
 
 function Contact() {
   return (
     <section className="contact">
+
       <div className="contact-hero">
         <div className="contact-hero-inner">
           <h1>Contact us</h1>
@@ -99,9 +101,23 @@ function Contact() {
               </a>
             </div>
           </div>
+
+          <div className="contact-social">
+            <h3>Follow us</h3>
+            <p>Stay connected for updates, new books, and learning resources.</p>
+            <SocialLinks
+              urls={{
+                facebook: "https://www.facebook.com/profile.php?id=61591425413251",
+                instagram:
+                  "https://www.instagram.com/makht.aba?utm_source=qr&igsh=MTRoYTB6NHpyamRwNQ%3D%3D",
+              }}
+            />
+          </div>
+
         </div>
 
         <div className="contact-map">
+
           <div className="map-header">
             <h3>Find us</h3>
             <p>Luther Plaza, Ground Floor Suite 4, Nyerere Road, Nairobi</p>

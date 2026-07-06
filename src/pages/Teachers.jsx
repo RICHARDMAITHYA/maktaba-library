@@ -1,17 +1,23 @@
 import React from "react";
+import teachersHero from "../assets/mk3.PNG";
 import "../styles/Teachers.css";
 
 function Teachers() {
   return (
     <section className="teachers">
       <div className="teachers-header">
-        <h1>Teacher Resources Hub</h1>
-        <p>
-          Everything a teacher needs — from lesson-ready PowerPoints to detailed schemes of work, notes and rubrics. Save time. Teach better. Grade 10 CBE aligned.
-        </p>
+        <img className="teachers-hero-image" src={teachersHero} alt="Teacher resources" />
+        <div className="teachers-header-content">
+          <h1>Teacher Resources Hub</h1>
+          <p>
+            Everything a teacher needs — from lesson-ready PowerPoints to detailed schemes of work, notes and rubrics. Save time. Teach better. Grade 10 CBE aligned.
+          </p>
+        </div>
+
       </div>
 
       <div className="teacher-grid">
+
         <div className="teacher-card">
           <div className="teacher-num">1</div>
           <div>

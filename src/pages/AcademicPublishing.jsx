@@ -1,15 +1,19 @@
 import React from "react";
+import academicHero from "../assets/mk4.PNG";
 import "../styles/About.css";
 
 function AcademicPublishing() {
   return (
     <section className="about">
       <div className="about-hero">
-        <h1>Academic Publishing</h1>
-        <p>
-          Our publishing approach bridges curriculum and classroom, empowering learners
-          and educators with world-class resources aligned to CBE standards and KICD designs.
-        </p>
+        <img className="about-hero-image" src={academicHero} alt="Academic Publishing" />
+        <div className="about-hero-content">
+          <h1>Academic Publishing</h1>
+          <p>
+            Our publishing approach bridges curriculum and classroom, empowering learners
+            and educators with world-class resources aligned to CBE standards and KICD designs.
+          </p>
+        </div>
       </div>
 
       <div className="mission-vision">
@@ -23,21 +27,21 @@ function AcademicPublishing() {
 
       <div style={{display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '24px', marginTop: '30px'}}>
         <div style={{backgroundColor: '#f5f5f5', padding: '24px', borderRadius: '8px', borderLeft: '4px solid #006B3F'}}>
-          <h3 style={{color: '#006B3F', marginBottom: '12px'}}>📚 Premier Revision Series</h3>
+          <h3 style={{color: '#006B3F', marginBottom: '12px'}}> Premier Revision Series</h3>
           <p style={{fontSize: '14px', lineHeight: '1.6', color: '#555'}}>
             Comprehensive subject-specific revision books aligned to KICD Curriculum Designs. Each title covers all strands and sub-strands with model questions, worked answers, and self-assessment sections.
           </p>
         </div>
 
         <div style={{backgroundColor: '#f5f5f5', padding: '24px', borderRadius: '8px', borderLeft: '4px solid #C8102E'}}>
-          <h3 style={{color: '#006B3F', marginBottom: '12px'}}>🎬 Digital Learning Materials</h3>
+          <h3 style={{color: '#006B3F', marginBottom: '12px'}}> Digital Learning Materials</h3>
           <p style={{fontSize: '14px', lineHeight: '1.6', color: '#555'}}>
             ICT-integrated resources including academic videos, animations, set books performances, and teaching videos. Designed for modern classrooms and online learning environments.
           </p>
         </div>
 
         <div style={{backgroundColor: '#f5f5f5', padding: '24px', borderRadius: '8px', borderLeft: '4px solid #F2B825'}}>
-          <h3 style={{color: '#006B3F', marginBottom: '12px'}}>👩‍🏫 Teacher Resources</h3>
+          <h3 style={{color: '#006B3F', marginBottom: '12px'}}>Teacher Resources</h3>
           <p style={{fontSize: '14px', lineHeight: '1.6', color: '#555'}}>
             Professionally designed teaching materials including PowerPoint presentations, schemes of work, topical notes, and assessment rubrics — all aligned to the KICD format.
           </p>

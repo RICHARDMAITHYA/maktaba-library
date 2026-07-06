@@ -50,15 +50,32 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
+  background: var(--gold);
+}
+
+.book-cover-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.book-cover-pdf {
+  width: 100%;
+  height: 100%;
+  display: block;
+  border: 0;
+}
+
+
+.book-cover--emoji {
+  background: var(--gold);
   font-family: 'Playfair Display', serif;
   font-size: 28px;
   font-weight: 700;
   color: var(--white);
 }
-
-.book-cover.math { background: var(--green); }
-.book-cover.science { background: var(--red); }
-.book-cover.english { background: var(--gold); }
 
 .book-card h3 {
   font-family: 'Playfair Display', serif;

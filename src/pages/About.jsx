@@ -1,17 +1,31 @@
 import React from "react";
+import aboutHero from "../assets/mk2.PNG";
+import aboutImg3 from "../assets/mk3.PNG";
+import aboutImg4 from "../assets/mk4.PNG";
+import aboutImg5 from "../assets/mk5.PNG";
 import "../styles/About.css";
 
 function About() {
   return (
     <section className="about">
       <div className="about-hero">
-        <h1>About Us</h1>
-        <p>
-          MAKTABA MART is Africa’s emerging knowledge empowerment institution —
-          dedicated to excellence in learning, teacher empowerment, and digital
-          transformation. We are not just publishers; we are builders of futures.
-        </p>
+        <img className="about-hero-image" src={aboutHero} alt="About MAKTABA MART" />
+        <div className="about-hero-content">
+          <h1>About Us</h1>
+          <p>
+            MAKTABA MART is Africa’s emerging knowledge empowerment institution —
+            dedicated to excellence in learning, teacher empowerment, and digital
+            transformation. We are not just publishers; we are builders of futures.
+          </p>
+        </div>
       </div>
+
+      <div className="about-strip">
+        <img className="about-strip-image" src={aboutImg3} alt="MAKTABA MART education" />
+        <img className="about-strip-image" src={aboutImg4} alt="MAKTABA MART publishing" />
+        <img className="about-strip-image" src={aboutImg5} alt="MAKTABA MART digital learning" />
+      </div>
+
 
       <div className="mission-vision">
         <h2>Our Mission</h2>

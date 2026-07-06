@@ -210,6 +210,28 @@
   transform: translateY(-2px);
 }
 
+.contact-social {
+  margin-top: 12px;
+  padding: 22px 18px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.7);
+  border: 1px solid rgba(19, 40, 73, 0.08);
+}
+
+.contact-social h3 {
+  font-family: 'Playfair Display', serif;
+  color: var(--navy);
+  font-size: 24px;
+  margin: 0 0 8px;
+}
+
+.contact-social p {
+  color: rgba(17, 37, 67, 0.88);
+  line-height: 1.7;
+  font-family: 'Inter', sans-serif;
+  margin: 0 0 14px;
+}
+
 .contact-map {
   background: var(--navy);
   color: var(--white);
@@ -217,6 +239,7 @@
   overflow: hidden;
   box-shadow: 0 30px 90px rgba(16, 26, 60, 0.18);
 }
+
 
 .map-header {
   padding: 30px 30px 0;

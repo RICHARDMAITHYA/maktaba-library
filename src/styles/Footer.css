@@ -94,31 +94,11 @@
   margin-bottom: 16px;
 }
 
-/* Social Links */
+/* Social Links (handled by SocialLinks.css now) */
 .social-links {
-  display: flex;
-  gap: 12px;
   margin-top: 16px;
 }
 
-.social-links a {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 36px;
-  height: 36px;
-  background: rgba(242, 184, 37, 0.15);
-  border-radius: 50%;
-  font-size: 18px;
-  transition: all 0.3s ease;
-  border: 1px solid rgba(242, 184, 37, 0.3);
-}
-
-.social-links a:hover {
-  background: var(--gold);
-  color: var(--navy);
-  transform: translateY(-3px);
-}
 
 /* Contact Info */
 .contact-info {

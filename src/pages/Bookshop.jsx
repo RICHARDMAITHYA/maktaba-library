@@ -1,6 +1,12 @@
 import React from "react";
 import "../styles/Bookshop.css";
 
+// PDF covers removed: missing assets prevented production build.
+// Keeping page layout intact; covers will appear as placeholders.
+const cslGrade10Cover = null;
+const samaritanSpineCover = null;
+
+
 function Bookshop() {
   return (
     <section className="bookshop">
@@ -12,27 +18,163 @@ function Bookshop() {
       </div>
 
       <div className="books-grid">
-        <div className="book-card"><span>🇬🇧</span><p>English</p><p style={{fontSize: '12px', color: '#999'}}>Languages · CBE</p></div>
-        <div className="book-card"><span>🇰🇪</span><p>Kiswahili</p><p style={{fontSize: '12px', color: '#999'}}>Languages · CBE</p></div>
-        <div className="book-card"><span>📖</span><p>English Literature</p><p style={{fontSize: '12px', color: '#999'}}>Literature · CBE</p></div>
-        <div className="book-card"><span>📜</span><p>Kiswahili Fasihi</p><p style={{fontSize: '12px', color: '#999'}}>Literature · CBE</p></div>
-        <div className="book-card"><span>➕</span><p>Essential Maths</p><p style={{fontSize: '12px', color: '#999'}}>Mathematics · CBE</p></div>
-        <div className="book-card"><span>∑</span><p>Core Mathematics</p><p style={{fontSize: '12px', color: '#999'}}>Mathematics · CBE</p></div>
-        <div className="book-card"><span>🔬</span><p>Biology</p><p style={{fontSize: '12px', color: '#999'}}>Sciences · CBE</p></div>
-        <div className="book-card"><span>⚗️</span><p>Chemistry</p><p style={{fontSize: '12px', color: '#999'}}>Sciences · CBE</p></div>
-        <div className="book-card"><span>⚡</span><p>Physics</p><p style={{fontSize: '12px', color: '#999'}}>Sciences · CBE</p></div>
-        <div className="book-card"><span>🌍</span><p>General Science</p><p style={{fontSize: '12px', color: '#999'}}>Sciences · CBE</p></div>
-        <div className="book-card"><span>💼</span><p>Business Studies</p><p style={{fontSize: '12px', color: '#999'}}>Social Sciences · CBE</p></div>
-        <div className="book-card"><span>🤝</span><p>Community Service Learning</p><p style={{fontSize: '12px', color: '#999'}}>Social Sciences · CBE</p></div>
-        <div className="book-card"><span>💻</span><p>Computer Studies</p><p style={{fontSize: '12px', color: '#999'}}>Technology · CBE</p></div>
-        <div className="book-card"><span>📡</span><p>ICT</p><p style={{fontSize: '12px', color: '#999'}}>Technology · CBE</p></div>
-        <div className="book-card"><span>🎨</span><p>Visual Arts</p><p style={{fontSize: '12px', color: '#999'}}>Creative Arts · CBE</p></div>
-        <div className="book-card"><span>🎵</span><p>Music</p><p style={{fontSize: '12px', color: '#999'}}>Creative Arts · CBE</p></div>
-        <div className="book-card"><span>🏃</span><p>Physical Education</p><p style={{fontSize: '12px', color: '#999'}}>Health & PE · CBE</p></div>
-        <div className="book-card"><span>🌱</span><p>Agriculture & Nutrition</p><p style={{fontSize: '12px', color: '#999'}}>Applied · CBE</p></div>
+        <div className="book-card">
+          <div className="book-cover">
+            <object
+              className="book-cover-pdf"
+              data={cslGrade10Cover}
+              type="application/pdf"
+              aria-label="English (cover)"
+            />
+          </div>
+          <p>English</p>
+          <p className="book-meta">Languages · CBE</p>
+        </div>
+
+        <div className="book-card">
+          <div className="book-cover">
+            <object
+              className="book-cover-pdf"
+              data={samaritanSpineCover}
+              type="application/pdf"
+              aria-label="Kiswahili (cover)"
+            />
+          </div>
+          <p>Kiswahili</p>
+          <p className="book-meta">Languages · CBE</p>
+        </div>
+
+        <div className="book-card">
+          <div className="book-cover">
+            <span></span>
+          </div>
+          <p>English Literature</p>
+          <p className="book-meta">Literature · CBE</p>
+        </div>
+
+        <div className="book-card">
+          <div className="book-cover">
+            <span></span>
+          </div>
+          <p>Kiswahili Fasihi</p>
+          <p className="book-meta">Literature · CBE</p>
+        </div>
+
+        <div className="book-card">
+          <div className="book-cover">
+            <span></span>
+          </div>
+          <p>Essential Maths</p>
+          <p className="book-meta">Mathematics · CBE</p>
+        </div>
+
+        <div className="book-card">
+          <div className="book-cover">
+            <span></span>
+          </div>
+          <p>Core Mathematics</p>
+          <p className="book-meta">Mathematics · CBE</p>
+        </div>
+
+        <div className="book-card">
+          <div className="book-cover">
+            <span></span>
+          </div>
+          <p>Biology</p>
+          <p className="book-meta">Sciences · CBE</p>
+        </div>
+
+        <div className="book-card">
+          <div className="book-cover">
+            <span></span>
+          </div>
+          <p>Chemistry</p>
+          <p className="book-meta">Sciences · CBE</p>
+        </div>
+
+        <div className="book-card">
+          <div className="book-cover">
+            <span></span>
+          </div>
+          <p>Physics</p>
+          <p className="book-meta">Sciences · CBE</p>
+        </div>
+
+        <div className="book-card">
+          <div className="book-cover">
+            <span></span>
+          </div>
+          <p>General Science</p>
+          <p className="book-meta">Sciences · CBE</p>
+        </div>
+
+        <div className="book-card">
+          <div className="book-cover">
+            <span></span>
+          </div>
+          <p>Business Studies</p>
+          <p className="book-meta">Social Sciences · CBE</p>
+        </div>
+
+        <div className="book-card">
+          <div className="book-cover">
+            <span></span>
+          </div>
+          <p>Community Service Learning</p>
+          <p className="book-meta">Social Sciences · CBE</p>
+        </div>
+
+        <div className="book-card">
+          <div className="book-cover">
+            <span></span>
+          </div>
+          <p>Computer Studies</p>
+          <p className="book-meta">Technology · CBE</p>
+        </div>
+
+        <div className="book-card">
+          <div className="book-cover">
+            <span></span>
+          </div>
+          <p>ICT</p>
+          <p className="book-meta">Technology · CBE</p>
+        </div>
+
+        <div className="book-card">
+          <div className="book-cover">
+            <span></span>
+          </div>
+          <p>Visual Arts</p>
+          <p className="book-meta">Creative Arts · CBE</p>
+        </div>
+
+        <div className="book-card">
+          <div className="book-cover">
+            <span></span>
+          </div>
+          <p>Music</p>
+          <p className="book-meta">Creative Arts · CBE</p>
+        </div>
+
+        <div className="book-card">
+          <div className="book-cover">
+            <span></span>
+          </div>
+          <p>Physical Education</p>
+          <p className="book-meta">Health & PE · CBE</p>
+        </div>
+
+        <div className="book-card">
+          <div className="book-cover">
+            <span></span>
+          </div>
+          <p>Agriculture & Nutrition</p>
+          <p className="book-meta">Applied · CBE</p>
+        </div>
       </div>
     </section>
   );
 }
+
 
 export default Bookshop;

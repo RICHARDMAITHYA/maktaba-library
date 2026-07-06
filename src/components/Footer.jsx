@@ -2,11 +2,13 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import FlagStripe from "./FlagStripe";
 import boostLogo from "../assets/boost.PNG";
+import SocialLinks from "./SocialLinks";
 import "../styles/Footer.css";
 
 function Footer() {
 
   const [email, setEmail] = useState("");
+
 
   const handleNewsletterSubmit = (e) => {
     e.preventDefault();
@@ -41,12 +43,14 @@ function Footer() {
 
             <p className="company-tagline">Dedicated to Excellence in Learning</p>
             <p className="company-desc">Africa's emerging knowledge empowerment institution delivering quality educational solutions.</p>
-            <div className="social-links">
-              <a href="#" title="Facebook" aria-label="Facebook">📘</a>
-              <a href="#" title="Twitter" aria-label="Twitter">𝕏</a>
-              <a href="#" title="LinkedIn" aria-label="LinkedIn">💼</a>
-              <a href="#" title="Instagram" aria-label="Instagram">📷</a>
-            </div>
+            <SocialLinks
+              urls={{
+                facebook: "https://www.facebook.com/profile.php?id=61591425413251",
+                instagram:
+                  "https://www.instagram.com/makht.aba?utm_source=qr&igsh=MTRoYTB6NHpyamRwNQ%3D%3D",
+              }}
+            />
+
           </div>
 
           {/* Column 2: Products */}

@@ -1,0 +1,38 @@
+.social-links{
+  display:flex;
+  gap:12px;
+  flex-wrap:wrap;
+}
+
+/* Reuse the footer look but allow usage elsewhere */
+.social-icon{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  width:36px;
+  height:36px;
+  border-radius:50%;
+  background: rgba(242, 184, 37, 0.15);
+  border: 1px solid rgba(242, 184, 37, 0.3);
+  color: var(--gold);
+  transition: all 0.3s ease;
+}
+
+.social-icon svg{
+  display:block;
+}
+
+.social-icon:hover{
+  background: var(--gold);
+  color: var(--navy);
+  transform: translateY(-3px);
+}
+
+.social-icon--disabled{
+  opacity:0.35;
+  cursor:not-allowed;
+  transform:none !important;
+  background: rgba(242, 184, 37, 0.08);
+  border-color: rgba(242, 184, 37, 0.18);
+}
+
