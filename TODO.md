@@ -1,8 +1,8 @@
-# Responsive width / small-device fit (MAKTABA MART)
+# Library TODO
 
-- [ ] Add global container + overflow-safe defaults in `src/index.css`.
-- [ ] Implement mobile navigation (hamburger + show/hide) in `src/components/Navigation.jsx` + `src/styles/Navigation.css`.
-- [ ] Refactor `src/pages/Home.jsx` to reduce inline fixed paddings and use responsive container/padding.
-- [ ] Refactor other shared layout styles if overflow remains (audit after testing).
-- [ ] Run dev server and verify at 390px / 768px / 1024px.
+## Completed Plan Tracking
+- [ ] Update `/events` page with **World Kiswahili Day Celebrations 2026**
+  - [ ] Set venue to **Kenya High School**
+  - [ ] Set date to **7th (update)** (no month requested)
+  - [ ] Add the event card (title, description, Register link)
 

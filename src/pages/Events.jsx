@@ -42,9 +42,20 @@ function Events() {
           </p>
           <a href="#">Register</a>
         </div>
+
+        <div className="event-card">
+          <h3>World Kiswahili Day Celebrations 2026</h3>
+          <p className="date">7th, 2026 · Kenya High School</p>
+          <p>
+            Join us for a celebration of Kiswahili language, culture, and
+            learning—featuring educational activities for learners and educators.
+          </p>
+          <a href="#">Register</a>
+        </div>
       </div>
     </section>
   );
 }
 
 export default Events;
+

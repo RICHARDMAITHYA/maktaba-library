@@ -43,16 +43,17 @@
 }
 
 .book-cover {
-  width: 80px;
-  height: 100px;
-  margin: 0 auto 16px;
-  border-radius: 6px;
+  width: 100%;
+  height: 180px;
+  margin: 0 0 14px;
+  border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
   background: var(--gold);
 }
+
 
 .book-cover-img {
   width: 100%;
@@ -68,6 +69,42 @@
   border: 0;
 }
 
+.book-cover-fallback {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.book-cover-cp1 {
+  background: var(--gold) url('../assets/cp1.PNG') center/cover no-repeat;
+}
+
+.book-cover-cp2 {
+  background: var(--gold) url('../assets/cp2.PNG') center/cover no-repeat;
+}
+
+.book-cover-cp3 {
+  background: var(--gold) url('../assets/cp3.PNG') center/cover no-repeat;
+}
+
+.book-order {
+  margin-top: 12px;
+  background: var(--navy);
+  color: var(--white);
+  border: 0;
+  border-radius: 8px;
+  padding: 10px 16px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 13px;
+  cursor: pointer;
+  transition: transform .15s, background-color .15s;
+}
+
+.book-order:hover {
+  background: #0b2f63;
+  transform: translateY(-1px);
+}
 
 .book-cover--emoji {
   background: var(--gold);
@@ -76,6 +113,7 @@
   font-weight: 700;
   color: var(--white);
 }
+
 
 .book-card h3 {
   font-family: 'Playfair Display', serif;

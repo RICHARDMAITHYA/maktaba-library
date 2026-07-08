@@ -1,16 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Barlow+Condensed:wght@400;600&family=Inter:wght@300;400;500;600&family=DM+Mono:wght@400&display=swap');
 
 :root {
-  --navy:    #abbff6; /* site blue */
+  --navy:    #334155; /* site blue */
   --red:    #CC0000; /* typography red */
-  --green:  #CC0000; /* legacy usage (mapped away from green) */
+  --green:  #006B3F; /* primary green */
 
-
-
-
-  --gold:   #FFFFFF; /* accent (kept as white) */
+  --gold:   #4f44c9; /* warm gold accent */
 
   --black:  #000000;
+
   --white:  #FFFFFF;
 }
 
